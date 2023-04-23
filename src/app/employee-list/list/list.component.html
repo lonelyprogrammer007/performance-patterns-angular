@@ -5,11 +5,21 @@
       {{ item.label }}
     </h3>
     <mat-chip-list>
-      <mat-chip title="Score" class="mat-chip mat-primary mat-chip-selected" color="primary" selected="true">
-        {{ calculate(item.num) }}
+      <mat-chip
+        title="Score"
+        class="mat-chip mat-primary mat-chip-selected"
+        color="primary"
+        selected="true"
+      >
+        {{ item.num | calculateFibonacci }}
       </mat-chip>
     </mat-chip-list>
-    <i title="Delete" class="fa fa-trash-o" aria-hidden="true" (click)="remove.emit(item)"></i>
+    <i
+      title="Delete"
+      class="fa fa-trash-o"
+      aria-hidden="true"
+      (click)="remove.emit(item)"
+    ></i>
   </mat-list-item>
   <mat-divider *ngIf="data.size !== 0"></mat-divider>
 </mat-list>

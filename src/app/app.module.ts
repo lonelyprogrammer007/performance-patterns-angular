@@ -11,6 +11,6 @@ import { ListGenerator } from './shared/list-generator.service';
   imports: [BrowserModule, EmployeeListModule],
   providers: [ListGenerator],
   declarations: [AppComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

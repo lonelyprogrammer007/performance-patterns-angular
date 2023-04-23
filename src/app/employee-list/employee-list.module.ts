@@ -10,6 +10,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { EmployeeListComponent } from './employee-list.component';
 import { NameInputComponent } from './name-input/name-input.component';
 import { ListComponent } from './list/list.component';
+import { CalculateFibonacciPipe } from './list/calculate-fibonacci.pipe';
 
 @NgModule({
   imports: [
@@ -21,7 +22,12 @@ import { ListComponent } from './list/list.component';
     MatInputModule,
     MatChipsModule,
   ],
-  declarations: [EmployeeListComponent, NameInputComponent, ListComponent],
+  declarations: [
+    EmployeeListComponent,
+    NameInputComponent,
+    ListComponent,
+    CalculateFibonacciPipe,
+  ],
   exports: [EmployeeListComponent],
 })
 export class EmployeeListModule {}
